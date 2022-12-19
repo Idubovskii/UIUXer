@@ -93,18 +93,12 @@ a {
 .copyright-text a:hover {
     color: $color_4;
 }
-.hero-rotate-text-image {
-    animation: rotation 9s infinite linear;
-    animation-name: rotate;
-}
 .button {
     margin-top: 10px;
     margin-right: 10px;
     margin-bottom: 10px;
     padding: 20px 60px;
-    border-style: solid;
-    border-width: 1px;
-    border-color: $color_4;
+    border: 1px solid $color_4;
     border-radius: 10px;
     background-color: #ff774c;
     transition: all 200ms ease;
@@ -135,6 +129,10 @@ a {
         background-position: 76% 50%;
         color: $color_2;
     }
+}
+.hero-rotate-text-image {
+    animation: rotation 9s infinite linear;
+    animation-name: rotate;
 }
 @keyframes rotate {
     from {
@@ -259,8 +257,6 @@ a {
 .hero-link-wrap {
     display: inline-block;
     margin-top: 60px;
-    font-size: 19px;
-    text-transform: uppercase;
 }
 .footer-section {
     padding-top: 100px;
