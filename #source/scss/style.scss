@@ -23,6 +23,10 @@ $fw600: 600;
     font-weight: $fontW;
     line-height: $lineH;
 }
+@mixin fontSW ($fontSz, $fontWt) {
+    font-size: $fontSz;
+    font-weight: $fontWt;
+}
 /*------------------------------Всякие scss прикалюхи-----------------------*/
 html {
     height: 100%;
@@ -102,8 +106,7 @@ a {
     border-radius: 10px;
     background-color: #ff774c;
     transition: all 200ms ease;
-    font-size: 18px;
-    font-weight: $fw600;
+    @include fontSW(18px, $fw600);
     display: inline-block;
     text-align: center;
     &:hover {
@@ -122,8 +125,7 @@ a {
     background-color: $color_2;
     background-position: 74% 50%;
     transition: all 200ms ease;
-    font-size: 18px;
-    font-weight: $fw600;
+    @include fontSW(18px, $fw600);
     &:hover {
         background-color: transparent;
         background-position: 76% 50%;
@@ -296,8 +298,7 @@ a {
     transition: color 200ms ease;
     font-family: Fraunces, sans-serif;
     color: $color_1;
-    font-size: 21px;
-    font-weight: 400;
+    @include fontSW(21px, 400);
     text-align: left;
     text-decoration: none;
     &:hover {
@@ -317,8 +318,7 @@ a {
 }
 .copy-mail-text {
     margin-top: 10px;
-    font-size: 20px;
-    font-weight: 400;
+    @include fontSW(20px, 400);
 }
 .copy-mail-link-text {
     margin-bottom: 15px;
